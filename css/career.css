@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: #CA0407;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "poppins";
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* Style for the active navigation link */
+}
+.navbar nav ul .nav-link {
+  text-decoration: none;
+  /* Default color */
+  /* Default font weight */
+}
+.navbar nav ul .nav-link.active {
+  font-weight: bold;
+  /* Make the active link bold */
+}
+.navbar .dayntee-logo {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+nav .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.career-hero {
+  background: url(../images/career.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3em 1em;
+}
+
+.texts, .career-head {
+  padding: 1em 2em;
+}
+.texts span, .texts a, .career-head span, .career-head a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer .container {
+  background-color: #CA0407;
+  height: 100px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    padding: 1.2em;
+  }
+  .navbar .container .logo {
+    font-size: 1.2em;
+    position: relative;
+  }
+  .navbar .container span {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin-left: -100px;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .career-hero {
+    height: 70vh;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .texts {
+    padding: 0 4em;
+  }
+  .career-hero {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .career-hero {
+    height: 50vh;
+  }
+}/*# sourceMappingURL=career.css.map */

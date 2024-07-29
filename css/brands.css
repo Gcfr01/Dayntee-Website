@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: #CA0407;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "poppins";
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* Style for the active navigation link */
+}
+.navbar nav ul .nav-link {
+  text-decoration: none;
+  /* Default color */
+  /* Default font weight */
+}
+.navbar nav ul .nav-link.active {
+  font-weight: bold;
+  /* Make the active link bold */
+}
+.navbar .dayntee-logo {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+nav .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.brands-hero {
+  background-image: url(../images/office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 1em;
+}
+.brands-hero h2 {
+  color: var(--primary-color);
+  font-size: 3em;
+}
+.brands-hero h3 {
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-top: -1.5em;
+}
+.brands-hero h4 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-top: -1.5em;
+  margin-bottom: 5em;
+}
+.brands-hero p {
+  color: var(--primary-color);
+  line-height: 20px;
+}
+
+.offers {
+  text-align: center;
+  padding: 1em;
+}
+.offers .offers-container h1 {
+  color: var(--primary-color);
+  font-size: 3em;
+}
+.offers .offers-container h1 span {
+  font-weight: lighter;
+}
+.offers .offers-container .product-table {
+  text-align: left;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+.offers .offers-container .product-table .prod1,
+.offers .offers-container .product-table .prod2,
+.offers .offers-container .product-table .prod3,
+.offers .offers-container .product-table .prod3,
+.offers .offers-container .product-table .prod4,
+.offers .offers-container .product-table .prod5,
+.offers .offers-container .product-table .prod6 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.offers .offers-container .product-table .prod1 div,
+.offers .offers-container .product-table .prod2 div,
+.offers .offers-container .product-table .prod3 div,
+.offers .offers-container .product-table .prod3 div,
+.offers .offers-container .product-table .prod4 div,
+.offers .offers-container .product-table .prod5 div,
+.offers .offers-container .product-table .prod6 div {
+  margin-left: 1em;
+}
+.offers .offers-container .product-table .prod1 div h3,
+.offers .offers-container .product-table .prod2 div h3,
+.offers .offers-container .product-table .prod3 div h3,
+.offers .offers-container .product-table .prod3 div h3,
+.offers .offers-container .product-table .prod4 div h3,
+.offers .offers-container .product-table .prod5 div h3,
+.offers .offers-container .product-table .prod6 div h3 {
+  color: var(--primary-color);
+}
+.offers .offers-container .product-table .prod1 img,
+.offers .offers-container .product-table .prod2 img,
+.offers .offers-container .product-table .prod3 img,
+.offers .offers-container .product-table .prod3 img,
+.offers .offers-container .product-table .prod4 img,
+.offers .offers-container .product-table .prod5 img,
+.offers .offers-container .product-table .prod6 img {
+  width: 90%;
+  margin-top: 2em;
+}
+
+.more-info {
+  padding: 1em;
+}
+.more-info h1 {
+  color: var(--primary-color);
+  font-size: 3em;
+}
+.more-info h1 span {
+  font-weight: lighter;
+}
+.more-info p {
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+.more-info p span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.office-house {
+  background-image: url(../images/chicken\ house.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 1em;
+  height: 15em;
+}
+
+footer .container {
+  background-color: #CA0407;
+  height: 100px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    padding: 1.2em;
+  }
+  .navbar .container .logo {
+    font-size: 1.2em;
+    position: relative;
+  }
+  .navbar .container span {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin-left: -100px;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .offers .offers-container p {
+    padding: 0 3em;
+    line-height: 2em;
+  }
+  .offers .offers-container .product-table {
+    padding: 0 2em;
+  }
+  .offers .offers-container .product-table div img {
+    width: 100%;
+    margin-left: 1em;
+  }
+  .offers .offers-container .product-table div p {
+    margin-left: -3em;
+    margin-bottom: 3em;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .more-info h1,
+  .more-info p {
+    padding: 0.2em;
+  }
+  .more-info p {
+    margin-bottom: 4em;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .brands-hero {
+    padding: 2em 3em;
+  }
+  .brands-hero p {
+    font-weight: bold;
+    padding-right: 20em;
+  }
+  .offers .offers-container .we {
+    padding: 0 12em;
+  }
+  .offers .offers-container .product-table div img {
+    height: 20%;
+  }
+  .more-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 2em;
+  }
+  .more-info .office-house {
+    margin-top: 4em;
+    height: 80%;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .brands-container .navbar {
+    padding: 0 3em;
+  }
+}/*# sourceMappingURL=brands.css.map */

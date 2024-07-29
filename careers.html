@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dayntee Farms LTD</title>
+    <link rel="stylesheet" href="css/career.css">
+    <script src="https://kit.fontawesome.com/2a428d1a58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="brands-container">
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Dayntee<span>Farms</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" alt="" src="images\menu.svg">
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="">
+
+                    <ul class="primary-nav">
+                        <li ><a href="index.html" class="nav-link"> Home</a></li>
+                        <li><a href="about.html" class="nav-link"> About Us</a></li>
+                        <li><a href="brands.html" class="nav-link"> Our Brands</a></li>
+                    </ul>
+                    
+                    <ul class="seondary-nav">
+                        <li><a href="contact.html" class="nav-link"> contact</a></li>
+                        <li class="go-premium-cta"><a href="careers.html" class="nav-link"> Careers</a></li>
+                    </ul>
+                </nav>
+                <div class="dayntee-logo">
+                    <img src="images/DAYNTEE FARM LOGO.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="career-head">
+        <h2>Careers at Dayntee Farms Limited</h2>
+    </div>
+    <section class="career-hero">
+
+    </section>
+
+    <section class="texts">
+        <h2>Join Dayntee Teams</h2>
+        <p>
+           
+            
+            At Dayntee Farms, we are dedicated to excellence in poultry farming and strive to create a positive and dynamic work
+            environment. Although we are not currently recruiting, we encourage you to check back regularly for future
+            opportunities.
+            
+            If you are passionate about the agricultural sector and would like to be considered for future positions, please feel
+            free to send your resume and cover letter to <span>info@dayntee.com</span> or apply <a href="https://form.jotform.com/242105161908551">here</a>. We will keep your information on file and reach out
+            when suitable openings become available.
+            
+            Thank you for your interest in joining our team!
+        </p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><i class="fa-solid fa-copyright"></i> CopyRight 2024 Dayntee Farms Limited. </p>
+        </div>
+    </footer>
+
+    <script>
+        const mobile_btn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobile_btn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+        document.addEventListener('DOMContentLoaded', () => {
+                // Get the current page URL
+                const currentUrl = window.location.href;
+
+                // Select all navigation links
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                // Loop through the links and add the 'active' class to the current one
+                navLinks.forEach(link => {
+                    if (link.href === currentUrl) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+    </script>
+</body>
+
+</html>

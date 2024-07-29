@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dayntee Farms LTD</title>
+     <!-- <link rel="stylesheet" href="css/brands.css"> -->
+     
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/2a428d1a58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dayntee<span>Farms</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" alt="" src="images\menu.svg">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="">
+
+                <ul class="primary-nav">
+                    <li ><a href="index.html" class="nav-link"> Home</a></li>
+                    <li><a href="about.html" class="nav-link"> About Us</a></li>
+                    <li><a href="brands.html" class="nav-link"> Our Brands</a></li>
+                </ul>
+                
+                <ul class="seondary-nav">
+                    <li><a href="contact.html" class="nav-link"> contact</a></li>
+                    <li class="go-premium-cta"><a href="careers.html" class="nav-link"> Careers</a></li>
+                </ul>
+            </nav>
+            <div class="dayntee-logo">
+                <img src="images/DAYNTEE FARM LOGO.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <section class="contact-hero">
+        
+          
+            <h1>CONTACT US</h1>
+
+            <p>Below are our Contact Informations</p>
+           
+            
+            
+    
+    </section>
+
+    <section class="conatact-info">
+        <h1>CONTACT INFO</h1>
+        <div class="container">
+            <div class="address">
+                <i class="fa-solid fa-address-card"></i>
+                <h2>ADDRESS</h2>
+                <p>Km 5 Ajase-ipo - Offa Road, Amberi village, Kwara state</p>
+            </div>
+            <div class="phone">
+                <i class="fa-regular fa-phone"></i>
+                <h2>PHONE</h2>
+                    <p>+234 (904) 005 5555 | +234 (908) 071 5588</p>
+            </div>
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <h2>EMAIL</h2>
+                <p>info@dayntee.com</p>
+            </div>
+            <div class="socials">
+                <i class="fa-brands fa-medium"></i>
+                <h2>OUR SOCIAL MEDIAS</h2>
+                <p>
+                    <a href="https://web.facebook.com/DaynteeFarmsLtd"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/daynteefarmsltd/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/watch?v=eFix_48PfKU"><i class="fa-brands fa-youtube"></i></a>
+                    <a href=" https://www.linkedin.com/company/dayntee-farms-limited/?originalSubdomain=ng"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/DaynteeFarms"><i class="fa-brands fa-twitter"></i></a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="message">
+        <h1>SEND US A MESSAGE</h1>
+        <form>
+           <div>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <input type="text" name="phone" placeholder="Your Phone Number">
+            <input type="text" name="State" placeholder="Your State">
+           </div>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15795.87047567758!2d4.7685479!3d8.2060107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037c726f8be2d85%3A0x15abe3b402eb6362!2sDayntee%20Farms%20Limited!5e0!3m2!1sen!2sng!4v1722000323274!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><i class="fa-solid fa-copyright"></i> CopyRight 2024 Dayntee Farms Limited. </p>
+        </div>
+    </footer>
+
+
+    <script>
+        const mobile_btn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobile_btn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+        document.addEventListener('DOMContentLoaded', () => {
+                // Get the current page URL
+                const currentUrl = window.location.href;
+
+                // Select all navigation links
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                // Loop through the links and add the 'active' class to the current one
+                navLinks.forEach(link => {
+                    if (link.href === currentUrl) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+    </script>
+</body>
+</html>
